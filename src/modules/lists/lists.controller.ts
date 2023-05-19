@@ -11,7 +11,7 @@ import { ListsService } from './lists.service';
 export class TweetListController {
   constructor(private tweetListService: ListsService) {}
 
-  @Get()
+  @Get('/')
   async lists(
     @Param() param: GetTweetListParamDTO,
   ): Promise<GetTweetListResponseDTO> {
